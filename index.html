@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link href='http://fonts.googleapis.com/css?family=Asap:400,700' rel='stylesheet' type='text/css'>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <title>refactor'ed</title>
+    <style>
+      body,h1,h2,h3 {
+        font-family: 'Asap';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Asap'), local('Asap-Regular'), url(http://themes.googleusercontent.com/static/fonts/asap/v1/nvGvEwsMAvkIa6w2U-PXffesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+      }
+      #tuition, .alert, .success {
+        display: none;
+      }
+      .container {
+        padding-top: 50px;
+        max-width: 400px;
+        text-align: center;
+      }
+      .container-form {      
+        text-align: left;
+      }
+      h3 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <h1>How much will it cost to get <a href="http://refactoru.com/">refactorU</a>'ed?</h1>
+      <br>  
+    <div class="alert alert-danger">All fields are required. Try again.</div>
+    <div class="success">
+      <div class="alert alert-success" id="tuition">
+        <h3>You will have to pay $<span id="rate"></span>.</h3>
+      </div>
+      <p>Oh, and in case you didn't know, you are a <strong><span id="sexy"></span></strong>. Nice.
+      <br><br>
+      <p><button type="button" class="btn btn-default">Start Over?</button></p>
+    </div>
+
+    <div class="container-form">
+      <form role="form" class="form">
+        <div class="form-group">
+          <label for="collge">1. Current student or graduate (within the last 3 years) of a Colorado school?</label>
+            <div class="radio-inline">
+              <label class="radio-inline">
+                <input type="radio" name="optionsRadios" id="checkboxStudentYes" value="yes">yes</label>
+            </div>
+            <div class="radio-inline">
+              <label class="radio-inline">
+                <input type="radio" name="optionsRadios" id="checkboxStudentNo" value="no">no</label>
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="retired">2. Retired and active U.S. Military personnel (or spouse)?</label>
+          <div class="radio-inline">
+              <label class="radio-inline">
+                <input type="radio" name="optionsRadio" id="checkboxRetiredYes" value="yes">yes</label>
+            </div>
+            <div class="radio-inline">
+              <label class="radio-inline">
+                <input type="radio" name="optionsRadio" id="checkboxRetiredNo" value="no">no</label>
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="gender">3. Gender</label>
+          <select class="form-control" id="gender">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-success">Calculate your Tuition</button>
+      </form>
+
+
+    </div> 
+      <p style="padding-top:50px; text-align:center;">Built with two hands in <a href="http://goo.gl/maps/O6fpf">Colorado</a> by <br><a href="http://mherman.org">Michael Herman</a>, a real person.</p> 
+    </div>
+
+   
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="refactor.js"></script>
+
+  </body>
+</html>
+
+
+
+
+
+
